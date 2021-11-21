@@ -4,9 +4,9 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 
 
-RegisterServerEvent("Memel3:BuyWeapon")
+RegisterServerEvent("Warlif:BuyWeapon")
 
-AddEventHandler("Memel3:BuyWeapon", function(name, label, price)
+AddEventHandler("Warlif:BuyWeapon", function(name, label, price)
 
     if source then 
 
@@ -33,9 +33,9 @@ end)
 
 
 
-RegisterServerEvent("Memel3:BuyItem")
+RegisterServerEvent("Warlif:BuyItem")
 
-AddEventHandler("Memel3:BuyItem", function(name, label, price)
+AddEventHandler("Warlif:BuyItem", function(name, label, price)
 
     if source then 
 
