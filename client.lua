@@ -20,7 +20,7 @@ end)
 
 local openedMenu = false
 
-local mainMenu = RageUI.CreateMenu("Chasse pêche et tradition", "Menu")
+local mainMenu = RageUI.CreateMenu("Ammunation", "Menu")
 
 local subMenu = RageUI.CreateSubMenu(mainMenu, "Pistolet", "Menu")
 
