@@ -30,7 +30,7 @@ local subMenu3 = RageUI.CreateSubMenu(mainMenu, "Outils", "Menu")
 
 local subMenu4 = RageUI.CreateSubMenu(mainMenu, "Chasse", "Menu")
 
-local subMenu5 = RageUI.CreateSubMenu(mainMenu, "Quincaillerie", "Menu")
+local subMenu5 = RageUI.CreateSubMenu(mainMenu, "Pêche et accessoires de chasse", "Menu")
 
 mainMenu.Closed = function() openedMenu = false FreezeEntityPosition(PlayerPedId(), false) end
 
@@ -88,7 +88,7 @@ function OpenMenu()
 
                                         if hasWeaponLicense then
     
-                                        TriggerServerEvent("Memel:BuyWeapon", v.name, v.label, v.price)
+                                        TriggerServerEvent("Warlif:BuyWeapon", v.name, v.label, v.price)
     
                                         else
                                     ESX.ShowNotification("Il faut aller voir le LSPD pour le permis port d'arme !")   
@@ -122,7 +122,7 @@ function OpenMenu()
 
                                 onSelected = function()
 
-                                    TriggerServerEvent("Memel:BuyWeapon", v.name, v.label, v.price)
+                                    TriggerServerEvent("Warlif:BuyWeapon", v.name, v.label, v.price)
 
                                 end, 
                             })    
@@ -152,7 +152,7 @@ function OpenMenu()
 
                                 onSelected = function()
 
-                                    TriggerServerEvent("Memel:BuyItem", v.name, v.label, v.price)
+                                    TriggerServerEvent("Warlif:BuyItem", v.name, v.label, v.price)
 
                                 end, 
 
@@ -189,7 +189,7 @@ function OpenMenu()
 
                                         if hasWeaponLicense then
     
-                                        TriggerServerEvent("Memel:BuyWeapon", v.name, v.label, v.price)
+                                        TriggerServerEvent("Warlif:BuyWeapon", v.name, v.label, v.price)
     
                                         else
                                     ESX.ShowNotification("Il faut aller voir le LSPD pour le permis port d'arme !")   
@@ -225,7 +225,7 @@ function OpenMenu()
 
                                 onSelected = function()
 
-                                    TriggerServerEvent("Memel:BuyItem", v.name, v.label, v.price)
+                                    TriggerServerEvent("Warlif:BuyItem", v.name, v.label, v.price)
 
                                 end, 
 
